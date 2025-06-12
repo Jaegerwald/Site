@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --color-0: #000;
+    --color-1: #111;
+    --color-2: #222;
+    --color-3: #333;
+    --color-4: #444;
+    --color-5: #555;
+    --color-6: #666;
+    --color-7: #777;
+    --color-8: #888;
+    --color-9: #999;
+    --color-a: #aaa;
+    --color-b: #bbb;
+    --color-c: #ccc;
+    --color-d: #ddd;
+    --color-e: #eee;
+    --color-f: #fff;
+
+    --color-accent: #287;
+    --color-accent-light: #3a8;
+    --color-accent-secondary: #055;
+    --color-accent-secondary-light: #176;
+}
+
+html {
+    background-color: var(--color-2);
+    color: var(--color-e);
+    line-height: 1;
+    font-family: "Inter";
+    font-weight: 200;
+    text-decoration-thickness: 1px !important;
+    text-underline-offset: 2px !important;
+}
+
+::selection {
+    background-color: var(--color-accent-secondary);
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+}
+::-webkit-scrollbar-track {
+    background: var(--color-2);
+    border-left: 1px solid var(--color-1);
+    border-top: 1px solid var(--color-1);
+    
+    outline: 1px solid var(--color-3);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-4);
+    border-top: 1px solid var(--color-5);
+    border-bottom: 1px solid var(--color-5);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-5); 
+    border-top: 1px solid var(--color-6);
+    border-bottom: 1px solid var(--color-6);
+}
+::-webkit-scrollbar-corner {
+    background-color: var(--color-2);
+}
+
+/* #region *//* Elements */
+
+h1, h2, h4, h5 {
+    color: var(--color-f);
+    font-weight: 300;
+}
+
+h3 {
+    color: var(--color-c);
+    font-weight: 200;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+h6 {
+    color: var(--color-a);
+    font-size: 12px;
+    font-weight: 150;
+}
+
+hr {
+    border: unset;
+    border-top: 1px solid var(--color-1);
+    border-bottom: 1px solid var(--color-3);
+}
+
+div.box hr {
+    border-top-color: var(--color-2);
+    border-bottom-color: var(--color-4);
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+b {
+    font-weight: 400;
+}
+
+p, h1, h2, h4, h5, h6, hr, div {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration-thickness: 1px !important;
+    font-weight: 250;
+}
+a:hover {
+    color: var(--color-accent-light);
+}
+
+div.box {
+    border-radius: 4px;
+    border: 1px solid var(--color-4);
+    background-color: var(--color-3);
+    padding: 16px;
+    box-shadow: 0px 1px 0px var(--color-1);
+}
+
+span.boxHeader {
+    display: flex;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: var(--color-4);
+    border: 1px solid var(--color-5);
+    height: 32px;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: -17px;
+    margin-bottom: unset;
+    box-shadow: 0px 1px 0px var(--color-2);
+
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-f);
+}
+
+ul, ol {
+    padding-left: 16px;
+    margin: 0px;
+    margin-top: 16px;
+}
+ul li::marker {
+    content: "– ";
+    color: var(--color-f);
+}
+
+span.date {
+    margin-top: 4px;
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-a);
+}
+
+img.emoji {
+    display: inline-block;
+    height: 16px;
+    margin-bottom: -2px;
+}
+
+/* #region *//* Layout */
+
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: var(--color-3);
+    padding: 8px;
+    
+    border-bottom: 1px solid var(--color-4);
+    outline: 1px solid var(--color-1);
+}
+
+nav, main, footer > div {
+    margin: 8px auto;
+    width: 512px;
+}
+
+main {
+    min-height: calc(100vh - 64px);
+}
+
+footer {
+    background-color: var(--color-1);
+    outline: 1px solid var(--color-3);
+    border-top: 1px solid var(--color-0);
+    height: 128px;
+    padding: 8px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+nav ul {
+    margin: 0px;
+    display: inline-block;
+    list-style-type: none;
+    color: var(--color-a);
+    font-size: 16px;
+}
+nav ul li {
+    margin-left: 12px;
+    display: inline-block;
+}
+
+/* #region *//* Variations */
+
+body.withAside main {
+    width: calc(1024px + 2*16px);
+    display: grid;
+    grid-template-columns: 256px 512px 256px;
+    gap: 16px;
+}
