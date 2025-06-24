@@ -1,0 +1,6 @@
+#changelog li {
+    margin-bottom: 8px;
+}
+#changelog li:nth-last-child(1) {
+    margin-bottom: 0px;
+}

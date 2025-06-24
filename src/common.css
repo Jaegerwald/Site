@@ -223,3 +223,31 @@ body.withAside main {
     grid-template-columns: 256px 512px 256px;
     gap: 16px;
 }
+
+/* #region *//* Resizes */
+
+@media only screen and (max-width: 1088px) {
+    body.withAside main {
+        width: 512px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body.withAside nav, body.withAside main, body.withAside footer > div {
+        width: 512px;
+    }
+    body.withAside > aside {
+        width: 512px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    body {
+        width: unset !important;
+    }
+    nav, main, footer > div {
+        width: calc(100% - 64px) !important;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+}
