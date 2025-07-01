@@ -10,17 +10,18 @@ class Emoji extends HTMLElement {
     constructor() {
         super();
 
-        const n = this.innerText.trim();
-        console.log(n);
-        if (EMOJIS.includes(n)) {
+        const name = this.innerText.trim();
+        if (EMOJIS.includes(name)) {
             this.innerText = "";
 
             const emoji = document.createElement("img");
             emoji.className = "emoji";
-            emoji.src = `./img/emojis/${n}.webp`;
-            emoji.alt = `:${n}:"`
+            emoji.src = `./img/emojis/${name}.webp`;
+            emoji.alt = `:${name}:"`
 
             this.appendChild(emoji);
+        } else {
+            this.innerText = `:${name}:"`
         }
     }
 }
