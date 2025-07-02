@@ -17,11 +17,11 @@ class Emoji extends HTMLElement {
             const emoji = document.createElement("img");
             emoji.className = "emoji";
             emoji.src = `./img/emojis/${name}.webp`;
-            emoji.alt = `:${name}:"`
+            emoji.alt = `:${name}:"`;
 
             this.appendChild(emoji);
         } else {
-            this.innerText = `:${name}:"`
+            this.innerText = `:${name}:`;
         }
     }
 }

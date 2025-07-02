@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sharkbyte info</title>
+    <link rel="stylesheet" href="./src/global.css">
+    <link rel="stylesheet" href="./src/common.css">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <span>sharkbyte info</span>
+            <ul>
+                <li><a href="https://github.com/Jaegerwald/Site/" target="_blank">Source</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="box">
+            <h3>How is this hosted?</h3>
+            <hr>
+            The answer's pretty simple. I just use <a href="https://pages.cloudflare.com/" target="_blank">Cloudflare Pages</a>.
+            I give them the link to my GitHub repository and they do all the deploying for me.
+            It's really nice and easy to work with, and free!
+        </div>
+        <div class="box">
+            <h3>You got any buttons?</h3>
+            <hr>
+            Not yet, maybe soon if I can decide on a design.
+        </div>
+        <div class="box">
+            <h3>How do you emoji?</h3>
+            <hr>
+            Wrote a simple script for it, here you go:
+<pre><code>
+// .webp only, has to match filename
+const EMOJIS = [
+    "33", "sheldon", "yippee"
+]
+
+class Emoji extends HTMLElement {
+
+    constructor() {
+        super();
+
+        const name = this.innerText.trim();
+        if (EMOJIS.includes(name)) {
+            this.innerText = "";
+
+            const emoji = document.createElement("img");
+            emoji.className = "emoji";
+            emoji.src = `./img/emojis/${name}.webp`;
+            emoji.alt = `:${name}:"`;
+
+            this.appendChild(emoji);
+        } else {
+            this.innerText = `:${name}:`;
+        }
+    }
+}
+customElements.define("e-", Emoji);</code></pre>
+        Wrap the emoji name in <code>&#60;e-&#62;</code> and you're good to go.
+        </div>
+        For further answers, reach out to me <a href="mailto:jae@sharkb.yt">directly</a>!
+        I'm open to talk to pretty much anyone <e->33</e->
+        I'll probably put legal stuff here as well if necessary..
+        <h6>Stripped down page, <a href="https://sharkb.yt/">go back home</a></h6>
+    </main>
+    <footer>
+        <div>
+            what the fuck...
+            very likely i forget to change the footer here, please yell at me
+        </div>
+    </footer>
+    <script src="./src/main.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("./fonts.css");
 
 :root {
     --color-0: #000;
@@ -83,6 +83,9 @@ h6 {
     font-size: 12px;
     font-weight: 150;
 }
+h6 a {
+    font-weight: 400 !important;
+}
 
 hr {
     border: unset;
@@ -109,7 +112,7 @@ p, h1, h2, h4, h5, h6, hr, div {
 a {
     color: var(--color-accent);
     text-decoration-thickness: 1px !important;
-    font-weight: 250;
+    font-weight: 300;
 }
 a:hover {
     color: var(--color-accent-light);
@@ -213,6 +216,16 @@ nav ul {
 nav ul li {
     margin-left: 12px;
     display: inline-block;
+}
+nav ul li a {
+    color: var(--color-a);
+    font-size: 16px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: var(--color-a);
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 /* #region *//* Variations */

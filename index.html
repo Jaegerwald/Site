@@ -11,10 +11,10 @@
 <body class="withAside">
     <header>
         <nav>
-            <span>sharkbyte</span>
+            <span>sharkbyte <-- make this a logo png</span>
             <ul>
-                <li>Site Info</li>
-                <li>Source</li>
+                <li><a href="info.html" target="_blank">Site Info</a></li>
+                <li><a href="https://github.com/Jaegerwald/Site/" target="_blank">Source</a></li>
             </ul>
         </nav>
     </header>
@@ -26,20 +26,37 @@
                     <li><a href="./">Home</a></li>
                     <li><a href="./about">About me</a></li>
                     <li><a href="./sitemap">Sitemap</a></li>
-                    <li><a href="./resources">Resource</a></li>
+                    <li><a href="./credits">Credits</a></li>
                 </ul>
             </div>
             <div class="box">
                 <span class="boxHeader">Changelog</span>
                 <ul id="changelog">
+                    <li>Locked in—Guestbook, Site info, and much more <span class="date">7/2/2025</span></li>
                     <li>Basic mobile compatability, emojis <span class="date">6/24/2025</span></li>
                     <li>Added everything <e->33</e-> <span class="date">6/11/2025</span></li>
                 </ul>
             </div>
+            <div class="box">
+                <span class="boxHeader">Shrines</span>
+                <img src="./img/shrines.png" width="100%">
+            </div>
         </aside>
         <div>
+            <div class="box box-warning">
+                <marquee behaviour="scroll">Everything on this site rn is work in progress, updates whenever i feel like it :3</marquee>
+            </div>
+
             <h1>Welcome</h1>
             <p>This is my little corner on the internet! I uh... like a lot of stuff.</p>
+            <hr>
+            <div class="box">
+                Idea: put famfamfam silk icons in some places :3
+            </div>
+            <div class="box">
+                Idea: put some sort of blog with a timeline here, maybe use javascript and do a load more button of some kind
+                <img src="./img/timeline.png" width="100%">
+            </div>
             <hr>
             <div class="box">
                 <h3>!!! DISCLAIMER !!!</h3>
@@ -48,11 +65,11 @@
             </div>
         </div>
         <aside>
+            <div class="box box-bubble" id="feelings">
+                <center>I'm feeling <a href="https://www.imood.com/users/Jaegerwald"><img src="https://moods.imood.com/display/uname-Jaegerwald/fg-333333/bg-ccbb77/imood.gif" alt="The current mood of Jaegerwald at www.imood.com" border="0"></a>.</center>
+            </div>
             <div class="box">
-                <div class="box">
-                    <center><h6>Some sorta status here.</h6></center>
-                </div>
-                <img height="128px" width="128px"><br>
+                <img height="64px" width="64px" src="./img/pfps/jaegerwald.png"><br>
                 <h3>Hiiii I'm Jae :3</h3>
                 <p>I'm a massive computer nerd and like to code.
                     Chronically online. <e->sheldon</e-></p>
@@ -61,8 +78,9 @@
             <div class="box">
                 <center><h6>Webring.</h6></center>
             </div>
-            <div class="box">
-                <center><br><br><br><br><br><br><br><br><br><br><h6>Guestbook.</h6><br><br><br><br><br><br><br><br><br><br></center>
+            <div class="box" id="atabook">
+                <iframe src="https://jaegerwald.atabook.org/" title="atabook"></iframe>
+                <center><h6><a href="https://jaegerwald.atabook.org/">Guestbook not working? Click here.</a></h6></center>
             </div>
         </aside>
     </main>
@@ -70,6 +88,7 @@
         <div>
             what the fuck...
         </div>
+        <div class="box">maybe just make the footer an iframe so its easily reusable... probably horrable if iframes are disabled</div>
     </footer>
     <script src="./src/main.js"></script>
 </body>

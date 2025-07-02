@@ -1,6 +1,85 @@
+:root {
+    --box-bubble-bg: #cb7;
+    --box-bubble-border: #fe9;
+    --box-bubble-inbetween: #dc7;
+    --box-bubble-text: var(--color-2);
+}
+
 #changelog li {
     margin-bottom: 8px;
 }
 #changelog li:nth-last-child(1) {
     margin-bottom: 0px;
+}
+
+#atabook {
+    padding: 0px;
+}
+#atabook iframe {
+    width: 100%;
+    height: 512px;
+    background-color: transparent;
+}
+
+#feelings {
+    padding-top: 8px;
+    padding-bottom: 12px;
+}
+#feelings center a {
+    position: relative;
+    top: 3px;
+    height: 15px;
+    width: 16px;
+}
+
+.box-bubble {
+    background-color: var(--box-bubble-bg) !important;
+    border-color: var(--box-bubble-border) !important;
+    color: var(--box-bubble-text) !important;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: -8px;
+}
+.box-bubble::before {
+    content: "";
+    display: block;
+    border: 1px solid var(--box-bubble-border);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(18px) translateX(-8px);
+
+    border-top-color: transparent;
+    border-left-color: var(--box-bubble-inbetween);
+    border-right-color: var(--box-bubble-inbetween);
+    background-color: var(--box-bubble-bg);
+    box-shadow: 0px 1px 0px var(--color-1);
+}
+.box-bubble::after {
+    content: "";
+    display: block;
+    border: 1px solid var(--box-bubble-border);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(20px) translateX(6px);
+
+    background-color: var(--box-bubble-bg);
+    box-shadow: 0px 1px 0px var(--color-1);
+}
+
+.box-warning {
+    margin-top: 0px;
+    padding: 8px 0px !important;
+    height: 12px !important;
+    font-weight: 400;
+    font-size: 12px;
+    background-image: url("./../img/warn.svg");
+    background-size: contain;
+}
+.box-warning marquee {
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000, 1px 0px 0 #000000, 0px 1px 0 #000000, -1px 0px 0 #000000, 0px -1px 0 #000000, 0px 01px 8px #000000, 0px 01px 8px #000000, 0px 01px 8px #000000, 0px 01px 8px #000000, 0px 01px 8px #000000;
+    /* text-transform: uppercase; */
 }

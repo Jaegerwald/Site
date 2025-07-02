@@ -1,3 +1,6 @@
 #fiveserver-info-wrapper {
     display: none !important;
 }
+iframe {
+    border: none;
+}
