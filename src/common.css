@@ -32,6 +32,7 @@ html {
     font-weight: 200;
     text-decoration-thickness: 1px !important;
     text-underline-offset: 2px !important;
+    font-size: 14px;
 }
 
 ::selection {
@@ -81,7 +82,7 @@ h3 {
 h6 {
     color: var(--color-a);
     font-size: 12px;
-    font-weight: 150;
+    font-weight: 200;
 }
 h6 a {
     font-weight: 400 !important;
@@ -112,7 +113,7 @@ p, h1, h2, h4, h5, h6, hr, div {
 a {
     color: var(--color-accent);
     text-decoration-thickness: 1px !important;
-    font-weight: 300;
+    font-weight: 400;
 }
 a:hover {
     color: var(--color-accent-light);
@@ -155,6 +156,9 @@ ul li::marker {
     content: "– ";
     color: var(--color-f);
 }
+li ul, li ol {
+    margin: 0px;
+}
 
 span.date {
     margin-top: 4px;
@@ -169,6 +173,46 @@ img.emoji {
     display: inline-block;
     height: 16px;
     margin-bottom: -2px;
+}
+
+i- > img.icon {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+i-.start > img.icon {
+    margin-left: 0px;
+    margin-right: 4px;
+}
+i-.end > img.icon {
+    margin-left: 4px;
+    margin-right: 0px;
+}
+
+img.pfp {
+    border-radius: 4px;
+    border: 1px solid var(--color-4);
+    background-color: var(--color-3);
+}
+div.box img.pfp {
+    border-radius: 2px;
+    border: 1px solid var(--color-5);
+    background-color: var(--color-2);
+}
+
+div.engravedRidge {
+    border-radius: 2px;
+    border: 1px solid var(--color-1);
+    padding: 8px;
+    box-shadow: -1px -1px 0px var(--color-1), 0px -1px 0px var(--color-1), 1px 1px 0px var(--color-3), 0px 1px 0px var(--color-3);
+    border-top-color: var(--color-3);
+    border-left-color: var(--color-3);
+}
+div.box div.engravedRidge {
+    border-radius: 2px;
+    border: 1px solid var(--color-2);
+    box-shadow: -1px -1px 0px var(--color-2), 0px -1px 0px var(--color-2), 1px 1px 0px var(--color-4), 0px 1px 0px var(--color-4);
+    border-top-color: var(--color-4);
+    border-left-color: var(--color-4);
 }
 
 /* #region *//* Layout */
@@ -221,6 +265,7 @@ nav ul li a {
     color: var(--color-a);
     font-size: 16px;
     text-decoration: none;
+    font-weight: 300;
 }
 nav ul li a:hover {
     color: var(--color-a);

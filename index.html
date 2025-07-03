@@ -11,7 +11,7 @@
 <body class="withAside">
     <header>
         <nav>
-            <span>sharkbyte <-- make this a logo png</span>
+            <span id="logo"><img src="./img/logo.png" draggable="false"></img></span>
             <ul>
                 <li><a href="info.html" target="_blank">Site Info</a></li>
                 <li><a href="https://github.com/Jaegerwald/Site/" target="_blank">Source</a></li>
@@ -21,7 +21,7 @@
     <main>
         <aside>
             <div class="box">
-                <span class="boxHeader">Navigation</span>
+                <span class="boxHeader"><i- class="start">house</i->Navigation</span>
                 <ul>
                     <li><a href="./">Home</a></li>
                     <li><a href="./about">About me</a></li>
@@ -30,32 +30,76 @@
                 </ul>
             </div>
             <div class="box">
-                <span class="boxHeader">Changelog</span>
+                <span class="boxHeader"><i- class="start">time</i->Changelog</span>
                 <ul id="changelog">
+                    <li>Icons, Shrine Box, To-do List, extra stuff, and a few tweaks<span class="date">7/3/2025</span></li>
                     <li>Locked in—Guestbook, Site info, and much more <span class="date">7/2/2025</span></li>
                     <li>Basic mobile compatability, emojis <span class="date">6/24/2025</span></li>
                     <li>Added everything <e->33</e-> <span class="date">6/11/2025</span></li>
                 </ul>
             </div>
             <div class="box">
-                <span class="boxHeader">Shrines</span>
-                <img src="./img/shrines.png" width="100%">
+                <span class="boxHeader"><i- class="start">coins</i->Shrines<i- class="end">new</i-></span>
+                <div id="shrineList">
+                    <div id="shrineCard">
+                        <img draggable="false" src="./img/teto.png">
+                        teto
+                    </div>
+                    <div id="shrineCard">
+                        <img draggable="false" src="./img/evil.png">
+                        evil
+                    </div>
+                </div>
+                <h6>TODO: better shrine icons</h6>
+            </div>
+            <div class="box">
+                <span class="boxHeader"><i- class="start">paste_plain</i->Website To-do List</span>
+                <h6>Miscellaneous</h6>
+                <ul>
+                    <li>Make changelogs use changes.json instead of hardcoding</li>
+                    <li>Website footer</li>
+                    <li>Atabook logo</li>
+                    <li>Redesign navigation menu</li>
+                    <li>88x31, Embeds, Favicon</li>
+                    <li>Add more texture everywhere, right now it's kinda bland</li>
+                    <li>Codeblocks</li>
+                </ul>
+                <h6>Pages</h6>
+                <ul>
+                    <li>Shrines</li>
+                    <li>About me
+                        <ul>
+                            <li>Wishlist</li>
+                            <li>Section for the goobers (our cats)</li>
+                        </ul>
+                    </li>
+                    <li>Blog and blog posts</li>
+                    <li>Sitemap</li>
+                    <li>Credits (programs and stuff used)</li>
+                    <li>Media Log</li>
+                    <li>Resources</li>
+                    <li>"Photography"</li>
+                    <li>Tutorials</li>
+                    <li>Projects</li>
+                </ul>
             </div>
         </aside>
         <div>
-            <div class="box box-warning">
-                <marquee behaviour="scroll">Everything on this site rn is work in progress, updates whenever i feel like it :3</marquee>
+            <div class="box boxWarning">
+                <marquee behaviour="scroll"><i->error</i->Everything on this site rn is work in progress, updates whenever i feel like it :3<i->error</i-></marquee>
             </div>
 
-            <h1>Welcome</h1>
-            <p>This is my little corner on the internet! I uh... like a lot of stuff.</p>
+            <h1>Welcome to <img src="./img/logo.png" height="48px" style="transform: translateY(15px) translateX(-24px);"></h1>
+            <p>This is my little corner on the internet, have fun exploring everything :3</p>
             <hr>
             <div class="box">
-                Idea: put famfamfam silk icons in some places :3
-            </div>
-            <div class="box">
-                Idea: put some sort of blog with a timeline here, maybe use javascript and do a load more button of some kind
-                <img src="./img/timeline.png" width="100%">
+                <span class="boxHeader"><i- class="start">newspaper</i->Latest Post</span>
+                <div class="engravedRidge">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quia neque harum! In consequatur impedit nesciunt incidunt dolor molestiae maxime doloremque ipsa, id, harum ab, placeat tempore? Cum, quo animi?
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique sint libero illum autem mollitia maxime quod temporibus nostrum officiis, accusantium amet minima corporis reprehenderit inventore iusto possimus quibusdam voluptatem unde.
+                </div>
+                asdasd
             </div>
             <hr>
             <div class="box">
@@ -65,18 +109,18 @@
             </div>
         </div>
         <aside>
-            <div class="box box-bubble" id="feelings">
-                <center>I'm feeling <a href="https://www.imood.com/users/Jaegerwald"><img src="https://moods.imood.com/display/uname-Jaegerwald/fg-333333/bg-ccbb77/imood.gif" alt="The current mood of Jaegerwald at www.imood.com" border="0"></a>.</center>
+            <div class="box boxBubble" id="feelings">
+                <center>I'm feeling <a href="https://www.imood.com/users/Jaegerwald"><img src="https://moods.imood.com/display/uname-Jaegerwald/fg-333333/bg-dddddd/imood.gif" alt="The current mood of Jaegerwald at www.imood.com" border="0"></a>.</center>
             </div>
             <div class="box">
-                <img height="64px" width="64px" src="./img/pfps/jaegerwald.png"><br>
-                <h3>Hiiii I'm Jae :3</h3>
-                <p>I'm a massive computer nerd and like to code.
-                    Chronically online. <e->sheldon</e-></p>
+                <img height="64px" width="64px" src="./img/pfps/jaegerwald.png" class="pfp"><br>
+                <h3>jae</h3>
+                <p>im a computer nerd who likes to code</p>
                 <a href="./about">About me >>></a>
+                <h6>TODO: Finish layout here</h6>
             </div>
             <div class="box">
-                <center><h6>Webring.</h6></center>
+                <center><h6>Webring... 🍋‍🟩 soon™</h6></center>
             </div>
             <div class="box" id="atabook">
                 <iframe src="https://jaegerwald.atabook.org/" title="atabook"></iframe>

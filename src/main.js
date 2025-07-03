@@ -1,8 +1,6 @@
 // .webp only, has to match filename
 const EMOJIS = [
-    "33",
-    "sheldon",
-    "yippee"
+    "33", "sheldon", "yippee"
 ]
 
 class Emoji extends HTMLElement {
@@ -26,3 +24,31 @@ class Emoji extends HTMLElement {
     }
 }
 customElements.define("e-", Emoji);
+
+const ICONS = [
+    "coins", "house", "new", "time", "error", "picture", "asterisk_orange", "asterisk_yellow", "newspaper",
+    "paste_plain"
+]
+
+class Icon extends HTMLElement {
+
+    constructor() {
+        super();
+
+        const name = this.innerText.trim().toLowerCase();
+        if (ICONS.includes(name)) {
+            this.innerText = "";
+
+            const icon = document.createElement("img");
+            icon.draggable = false;
+            icon.className = "icon";
+            icon.src = `./img/icons/${name}.png`;
+            icon.alt = `[${name}]"`;
+
+            this.appendChild(icon);
+        } else {
+            this.innerText = `[${name}]`;
+        }
+    }
+}
+customElements.define("i-", Icon);
