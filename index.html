@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>sharkbyte</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
     <link rel="stylesheet" href="./src/global.css">
     <link rel="stylesheet" href="./src/common.css">
     <link rel="stylesheet" href="./src/style.css">
@@ -11,32 +17,22 @@
 <body class="withAside">
     <header>
         <nav>
-            <span id="logo"><img src="./img/logo.png" draggable="false"></img></span>
-            <ul>
-                <li><a href="info.html" target="_blank">Site Info</a></li>
-                <li><a href="https://github.com/Jaegerwald/Site/" target="_blank">Source</a></li>
-            </ul>
+            <header-content></header-content>
         </nav>
     </header>
     <main>
         <aside>
             <div class="box">
                 <span class="boxHeader"><i- class="start">house</i->Navigation</span>
-                <ul>
-                    <li><a href="./">Home</a></li>
-                    <li><a href="./about">About me</a></li>
-                    <li><a href="./sitemap">Sitemap</a></li>
-                    <li><a href="./credits">Credits</a></li>
-                </ul>
+                <navigation-content></navigation-content>
             </div>
             <div class="box">
                 <span class="boxHeader"><i- class="start">time</i->Changelog</span>
-                <ul id="changelog">
-                    <li>Icons, Shrine Box, To-do List, extra stuff, and a few tweaks<span class="date">7/3/2025</span></li>
-                    <li>Locked in—Guestbook, Site info, and much more <span class="date">7/2/2025</span></li>
-                    <li>Basic mobile compatability, emojis <span class="date">6/24/2025</span></li>
-                    <li>Added everything <e->33</e-> <span class="date">6/11/2025</span></li>
-                </ul>
+                <changelog-content>
+                    <center>
+                        <h6>Loading...</h6>
+                    </center>
+                </changelog-content>
             </div>
             <div class="box">
                 <span class="boxHeader"><i- class="start">coins</i->Shrines<i- class="end">new</i-></span>
@@ -56,13 +52,9 @@
                 <span class="boxHeader"><i- class="start">paste_plain</i->Website To-do List</span>
                 <h6>Miscellaneous</h6>
                 <ul>
-                    <li>Make changelogs use changes.json instead of hardcoding</li>
-                    <li>Website footer</li>
-                    <li>Atabook logo</li>
-                    <li>Redesign navigation menu</li>
-                    <li>88x31, Embeds, Favicon</li>
-                    <li>Add more texture everywhere, right now it's kinda bland</li>
-                    <li>Codeblocks</li>
+                    <li>Redesign navigation menu (how?)</li>
+                    <li>88x31, Embeds, <s>Favicon</s></li>
+                    <li>Add more texture everywhere, right now it's kinda bland (how?)</li>
                 </ul>
                 <h6>Pages</h6>
                 <ul>
@@ -82,6 +74,11 @@
                     <li>Tutorials</li>
                     <li>Projects</li>
                 </ul>
+                <h6>Unhinged Stuff</h6>
+                <ul>
+                    <li>Netscape Navigator Support (probably requires changing how this site is hosted)</li>
+                    <li>Internet Explorer Support</li>
+                </ul>
             </div>
         </aside>
         <div>
@@ -89,7 +86,7 @@
                 <marquee behaviour="scroll"><i->error</i->Everything on this site rn is work in progress, updates whenever i feel like it :3<i->error</i-></marquee>
             </div>
 
-            <h1>Welcome to <img src="./img/logo.png" height="48px" style="transform: translateY(15px) translateX(-24px);"></h1>
+            <h1>Welcome to <img src="./img/logo_color.png" height="48px" style="transform: translateY(15px) translateX(-24px);"></h1>
             <p>This is my little corner on the internet, have fun exploring everything :3</p>
             <hr>
             <div class="box">
@@ -113,27 +110,34 @@
                 <center>I'm feeling <a href="https://www.imood.com/users/Jaegerwald"><img src="https://moods.imood.com/display/uname-Jaegerwald/fg-333333/bg-dddddd/imood.gif" alt="The current mood of Jaegerwald at www.imood.com" border="0"></a>.</center>
             </div>
             <div class="box">
-                <img height="64px" width="64px" src="./img/pfps/jaegerwald.png" class="pfp"><br>
-                <h3>jae</h3>
-                <p>im a computer nerd who likes to code</p>
-                <a href="./about">About me >>></a>
-                <h6>TODO: Finish layout here</h6>
+                <div id="profileCard">
+                    <img height="64px" width="64px" src="./img/pfps/jaegerwald.png" class="pfp">
+                    <div>
+                        <h3>jae</h3>
+                        <p>im a computer nerd who likes to code</p>
+                        <a href="./about">About me >>></a>
+                    </div>
+                </div>
+                <h6>TODO: Finish profile card layout</h6>
             </div>
             <div class="box">
                 <center><h6>Webring... 🍋‍🟩 soon™</h6></center>
             </div>
             <div class="box" id="atabook">
+                <span class="boxHeader"><i- class="start">book_open</i->Guestbook<i- class="end">new</i-></span>
                 <iframe src="https://jaegerwald.atabook.org/" title="atabook"></iframe>
                 <center><h6><a href="https://jaegerwald.atabook.org/">Guestbook not working? Click here.</a></h6></center>
             </div>
         </aside>
     </main>
     <footer>
-        <div>
-            what the fuck...
+        <div id="footer">
+            <footer-content></footer-content>
         </div>
-        <div class="box">maybe just make the footer an iframe so its easily reusable... probably horrable if iframes are disabled</div>
     </footer>
-    <script src="./src/main.js"></script>
+
+    <!-- logic and components -->
+    <script src="./src/common.js"></script>
+    <script src="./src/components.js"></script>
 </body>
 </html>

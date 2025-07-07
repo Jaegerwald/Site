@@ -1,10 +1,21 @@
+console.log("%c💬 Haii! Feel free to go to sources and copy my code. :3", "font-size:16px;color:white;")
+
+async function getJson(url) {
+    let result = {};
+    await fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
+            result = data;
+        });
+    return result;
+}
+
 // .webp only, has to match filename
 const EMOJIS = [
     "33", "sheldon", "yippee"
 ]
 
 class Emoji extends HTMLElement {
-
     constructor() {
         super();
 
@@ -27,11 +38,10 @@ customElements.define("e-", Emoji);
 
 const ICONS = [
     "coins", "house", "new", "time", "error", "picture", "asterisk_orange", "asterisk_yellow", "newspaper",
-    "paste_plain"
+    "paste_plain", "book_open"
 ]
 
 class Icon extends HTMLElement {
-
     constructor() {
         super();
 

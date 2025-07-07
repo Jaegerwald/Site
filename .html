@@ -1,0 +1,77 @@
+<!-- PAGE TEMPLATE-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>sharkbyte</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="./src/global.css">
+    <link rel="stylesheet" href="./src/common.css">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body class="withAside">
+    <header>
+        <nav>
+            <header-content></header-content>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <div class="box">
+                <span class="boxHeader"><i- class="start">house</i->Navigation</span>
+                <navigation-content></navigation-content>
+            </div>
+            <div class="box">
+                <span class="boxHeader"><i- class="start">time</i->Changelog</span>
+                <changelog-content>
+                    <center>
+                        <h6>Loading...</h6>
+                    </center>
+                </changelog-content>
+            </div>
+            <div class="box">
+                <span class="boxHeader"><i- class="start">coins</i->Shrines<i- class="end">new</i-></span>
+                <div id="shrineList">
+                    <div id="shrineCard">
+                        <img draggable="false" src="./img/teto.png">
+                        teto
+                    </div>
+                    <div id="shrineCard">
+                        <img draggable="false" src="./img/evil.png">
+                        evil
+                    </div>
+                </div>
+                <h6>TODO: better shrine icons</h6>
+            </div>
+        </aside>
+        <div>
+        </div>
+        <aside>
+            <div class="box">
+                <center><h6>Webring... 🍋‍🟩 soon™</h6></center>
+            </div>
+            <div class="box" id="atabook">
+                <span class="boxHeader"><i- class="start">book_open</i->Guestbook<i- class="end">new</i-></span>
+                <iframe src="https://jaegerwald.atabook.org/" title="atabook"></iframe>
+                <center><h6><a href="https://jaegerwald.atabook.org/">Guestbook not working? Click here.</a></h6></center>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <div id="footer">
+            <footer-content></footer-content>
+        </div>
+    </footer>
+
+    <!-- logic and components -->
+    <script src="./src/common.js"></script>
+    <script src="./src/components.js"></script>
+</body>
+</html>

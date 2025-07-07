@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Home",
+        "href": "./"
+    },
+    {
+        "title": "About me",
+        "href": "./about"
+    },
+    {
+        "title": "Sitemap",
+        "href": "./sitemap"
+    },
+    {
+        "title": "Credits",
+        "href": "./credits"
+    },
+    {
+        "title": "Contact",
+        "href": "./contact"
+    }
+]

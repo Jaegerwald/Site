@@ -11,10 +11,7 @@
 <body>
     <header>
         <nav>
-            <span id="logo"><img src="./img/logo.png" draggable="false"></img></span>
-            <ul>
-                <li><a href="https://github.com/Jaegerwald/Site/" target="_blank">Source</a></li>
-            </ul>
+            <header-content></header-content>
         </nav>
     </header>
     <main>
@@ -34,8 +31,7 @@
             <h3>How do you emoji?</h3>
             <hr>
             Wrote a simple script for it, here you go:
-<pre><code>
-// .webp only, has to match filename
+<pre><code>// .webp only, has to match filename
 const EMOJIS = [
     "33", "sheldon", "yippee"
 ]
@@ -62,6 +58,7 @@ class Emoji extends HTMLElement {
 }
 customElements.define("e-", Emoji);</code></pre>
         Wrap the emoji name in <code>&#60;e-&#62;</code> and you're good to go.
+        A similar system is used for icons.
         </div>
         For further answers, reach out to me <a href="mailto:jae@sharkb.yt">directly</a>!
         I'm open to talk to pretty much anyone <e->33</e->
@@ -69,11 +66,11 @@ customElements.define("e-", Emoji);</code></pre>
         <h6>Stripped down page, <a href="https://sharkb.yt/">go back home</a></h6>
     </main>
     <footer>
-        <div>
-            what the fuck...
-            very likely i forget to change the footer here, please yell at me
+        <div id="footer">
+            <footer-content></footer-content>
         </div>
     </footer>
-    <script src="./src/main.js"></script>
+    <script src="./src/common.js"></script>
+    <script src="./src/components.js"></script>
 </body>
 </html>

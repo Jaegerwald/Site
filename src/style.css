@@ -5,6 +5,34 @@
     --boxBubble-text: var(--color-2);
 }
 
+header-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+header-content ul {
+    margin: 0px;
+    display: inline-block;
+    list-style-type: none;
+    color: var(--color-a);
+    font-size: 16px;
+}
+header-content ul li {
+    margin-left: 12px;
+    display: inline-block;
+}
+header-content ul li a {
+    color: var(--color-a);
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 300;
+}
+header-content ul li a:hover {
+    color: var(--color-a);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 #logo {
     margin: -8px;
 }
@@ -21,10 +49,18 @@
 
 #atabook {
     padding: 0px;
+    padding-top: 16px;
+}
+#atabook span.boxHeader {
+    margin-left: -1px;
+    margin-right: -1px;
+    margin-bottom: 1px;
+    transform: translateZ(64px);
 }
 #atabook iframe {
     width: 100%;
     height: 512px;
+    margin-top: -32px;
     background-color: transparent;
 }
 
@@ -77,6 +113,14 @@
     box-shadow: 0px 1px 0px var(--color-1);
 }
 
+#profileCard {
+    display: grid;
+    grid-template-columns: 64px auto;
+    grid-template-rows: auto;
+    gap: 16px;
+    margin: 0px;
+}
+
 .boxWarning {
     margin-top: 0px;
     padding: 8px 0px !important;
@@ -120,4 +164,50 @@
 }
 #shrineCard img {
     height: 48px;
+}
+
+footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 32px;
+}
+#logoFooter img {
+    opacity: 0.5;
+    width: 128px;
+    margin: -16px;
+}
+footer-content top-button {
+    color: var(--color-accent);
+    text-decoration-thickness: 1px !important;
+    text-decoration: underline;
+    font-weight: 400;
+    cursor: pointer;
+}
+#footerLinks h3 {
+    color: var(--color-a);
+    font-weight: 200;
+    margin-bottom: 8px;
+}
+#footerLinks ul {
+    margin-top: 0px;
+}
+
+@media only screen and (max-width: 640px) {
+    #footer top-button {
+        background-color: var(--color-2);
+        padding: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        display: block;
+        border-radius: 4px;
+        border: 1px solid var(--color-3);
+        text-decoration: none;
+        color: var(--color-e);
+        font-weight: 200;
+    }
+    #footer top-button:active {
+        background-color: var(--color-3);
+        border-color: var(--color-4);
+    }
 }
