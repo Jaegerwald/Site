@@ -38,7 +38,7 @@ customElements.define("e-", Emoji);
 
 const ICONS = [
     "coins", "house", "new", "time", "error", "picture", "asterisk_orange", "asterisk_yellow", "newspaper",
-    "paste_plain", "book_open"
+    "paste_plain", "book_open", "sitemap", "note", "heart", "feed", "book", "help", "user"
 ]
 
 class Icon extends HTMLElement {

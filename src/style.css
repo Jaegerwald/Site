@@ -40,6 +40,43 @@ header-content ul li a:hover {
     height: 32px;
 }
 
+navigation-content .title {
+    display: block;
+    margin: 4px;
+    margin-top: 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-a);
+}
+navigation-content .navigation {
+    list-style-type: none;
+    display: flex;
+    padding: 0px;
+    gap: 4px;
+    margin: 0px;
+    flex-wrap: wrap;
+}
+navigation-content .navigation li {
+    display: inline-block;
+    padding: 2px 4px;
+    border: 1px solid var(--color-5);
+    background-color: var(--color-4);
+    border-radius: 2px;
+    font-size: 12px;
+    box-shadow: 0px 1px 0px var(--color-2);
+}
+navigation-content .navigation li a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-e);
+    font-weight: 250;
+}
+navigation-content .navigation li a {
+    transform: translateY(1px);
+}
+
 #changelog li {
     margin-bottom: 8px;
 }
@@ -119,6 +156,13 @@ header-content ul li a:hover {
     grid-template-rows: auto;
     gap: 16px;
     margin: 0px;
+}
+#profileCard div {
+    margin: 0px;
+}
+#profileCard p {
+    margin: 0px;
+    margin-bottom: 4px;
 }
 
 .boxWarning {

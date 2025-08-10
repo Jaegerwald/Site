@@ -17,13 +17,24 @@ class NavigationElement extends HTMLElement {
         super();
 
         this.innerHTML =
+`<span class="title">Site</span>
+<ul class="navigation">
+    <li><a href="./"><i- class="start">house</i-> Home</a></li>
+    <li><a href="./sitemap"><i- class="start">sitemap</i-> Sitemap</a></li>
+    <li><a href="./about"><i- class="start">help</i-> About</a></li>
+    <li><a href="./noteboard"><i- class="start">note</i-> Noteboard</a></li>
+    <li><a href="./credits"><i- class="start">heart</i-> Credits</a></li>
+</ul>
+<span class="title">You</span>
+<ul class="navigation">
+    <li><a href="./resources"><i- class="start">book</i-> Resources</a></li>
+</ul>
+<span class="title">Me</span>
+<ul class="navigation">
+    <li><a href="./about_me"><i- class="start">user</i->About Me</a></li>
+    <li><a href="./blog"><i- class="start">feed</i-> Blog</li>
+</ul>
 `
-<ul>
-    <li><a href="./">Home</a></li>
-    <li><a href="./about">About me</a></li>
-    <li><a href="./sitemap">Sitemap</a></li>
-    <li><a href="./credits">Credits</a></li>
-</ul>`
     }
 }
 customElements.define("navigation-content", NavigationElement);
