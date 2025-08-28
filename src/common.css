@@ -106,7 +106,7 @@ b {
 }
 
 p, h1, h2, h4, h5, h6, hr, div {
-    margin-top: 16px;
+    margin-top: 0px;
     margin-bottom: 16px;
 }
 
@@ -157,7 +157,7 @@ span.boxHeader {
     padding-left: 8px;
     padding-right: 8px;
     margin: -17px;
-    margin-bottom: unset;
+    margin-bottom: 17px;
     box-shadow: 0px 1px 0px var(--color-2);
 
     font-size: 12px;
@@ -249,7 +249,7 @@ header {
 }
 
 nav, main, footer > div {
-    margin: 8px auto;
+    margin: 16px auto;
     width: 512px;
 }
 

@@ -28,6 +28,7 @@ class NavigationElement extends HTMLElement {
 <span class="title">You</span>
 <ul class="navigation">
     <li><a href="./resources"><i- class="start">book</i-> Resources</a></li>
+    <li><a href="./wmp_skins"><i- class="start">ipod</i-> WMP Skins</a></li>
 </ul>
 <span class="title">Me</span>
 <ul class="navigation">

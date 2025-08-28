@@ -1,0 +1,55 @@
+<!-- PAGE TEMPLATE-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>sharkbyte</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="./src/global.css">
+    <link rel="stylesheet" href="./src/common.css">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body class="withAside">
+    <header>
+        <nav>
+            <header-content></header-content>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <div class="box">
+                <span class="boxHeader"><i- class="start">house</i->Navigation</span>
+                <navigation-content></navigation-content>
+            </div>
+        </aside>
+        <div>
+            <h6><a href="./wmp_skins">Windows Media Player Skins</a> ▸ Intended Behavior</h6>
+            <div class="box">
+                <span class="boxHeader">Rest</span>
+                <ul>
+                    <li><b>When using the volume knob, moving your cursor of the knob stops it from moving within this click</b></li>
+                    <li><b>Turning repeat on/off from within the right-click menu doesn't update the button</b> &mdash; WMP doesn't have events that include repeat changes, so updating the button is impossible. Click it twice if it's mismatched.</li>
+                </ul>
+            </div>
+        </div>
+        <aside>
+        </aside>
+    </main>
+    <footer>
+        <div id="footer">
+            <footer-content></footer-content>
+        </div>
+    </footer>
+
+    <!-- logic and components -->
+    <script src="./src/common.js"></script>
+    <script src="./src/components.js"></script>
+</body>
+</html>

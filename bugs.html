@@ -1,0 +1,73 @@
+<!-- PAGE TEMPLATE-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>sharkbyte</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="./src/global.css">
+    <link rel="stylesheet" href="./src/common.css">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body class="withAside">
+    <header>
+        <nav>
+            <header-content></header-content>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <div class="box">
+                <span class="boxHeader"><i- class="start">house</i->Navigation</span>
+                <navigation-content></navigation-content>
+            </div>
+        </aside>
+        <div>
+            <h1>Bug report guide</h1>
+            <p>
+                This guide is intended for reporting bugs within my published software. Please follow it closely.
+                This guide is <i>not</i> for software where the source is available on GitHub.
+                Please open an issue on GitHub in that case instead.
+            </p>
+            <h2>1 &mdash; capture screenshots/walkthroughs to reproduce the bug</h2>
+            <p>Optionally also describing the issue in words alongside the images is also good.</p>
+            <h2>2 &mdash; give log files or similar</h2>
+            <p>If this is an option, attach all files that could help.</p>
+            <h2>3 &mdash; write the e-mail</h2>
+            <p>Send a mail to <a href="mailto:jae@sharkb.yt">jae@sharkb.yt</a> formatted like this:</p>
+            <div class="box">
+                Subject: BUG REPORT | [short description of your issue in ~3-7 words]
+            </div>
+            <div class="box">
+                Software: -----<br>
+                Version: -----<br>
+                <br>
+                Long description of your issue
+                <br><br>
+                [Images at the bottom]
+            </div>
+            <div class="box">
+                <i>Attached: all important files for your issue</i>
+            </div>
+        </div>
+        <aside>
+        </aside>
+    </main>
+    <footer>
+        <div id="footer">
+            <footer-content></footer-content>
+        </div>
+    </footer>
+
+    <!-- logic and components -->
+    <script src="./src/common.js"></script>
+    <script src="./src/components.js"></script>
+</body>
+</html>
